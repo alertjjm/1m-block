@@ -92,7 +92,6 @@ int main(int argc, char **argv)
 		while(getline(openFile, line)){
 			if (!line.empty() && line[line.size() - 1] == '\r')
     			line.erase(line.size() - 1);
-			line="www."+line;
 			filters.insert(line);
 			i++;
 		}
